@@ -1,0 +1,597 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin:0;
+}
+
+body{
+	background-color: #FEF8F1;
+}
+.container{
+	position: relative;
+}
+#header{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	padding: 15px 0;
+	align-items: center;
+	z-index: 2;
+}
+
+#header-img{
+	height: 60px;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-shadow: 10px 10px 10px 10px rgba(0,0,0,1);
+}
+
+#header li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 25px 20px;
+
+}
+
+.nav-link:hover::after{
+	content: "";
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	border-bottom: 3px solid #EBA138;
+}
+
+.jumbotron-fluid{
+	background-image: url(./assets/image1.png);
+	height: 700px;
+	background-size: cover;
+	color: white;
+	position: relative;
+	z-index: -1;
+}
+.jumbotron-fluid::after{
+	content: "";
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgba(18,16,16,70%);
+}
+.jumbotron{
+	padding: 30px;
+	width: 50%;
+	position: relative;
+	top: 40%;
+	left: 15%;
+	z-index: 1;
+	line-height: 3.5rem;
+}
+
+.jumbotron h1{
+	font-size: 44px;
+	font-weight: 800;
+}
+
+.jumbotron h3{
+	font-size: 28px;
+	font-weight: 700;
+}
+.jumbotron p{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+hr{
+	width: 60%;
+	border: 3px solid white;
+	border-radius: 5px;
+}
+
+#services{
+	display: flex;
+	margin: 80px 30px;
+	justify-content: space-around;
+	
+}
+
+.services-title{
+	width: 20%;
+	margin-left: 60px;
+	align-self: center;
+	line-height: 2.75rem;
+	
+}
+
+.services-title::after{
+	content: "";
+	display: block;
+	width: 80%;
+	margin-top: 14px;
+	border-radius: 10px;
+	border-bottom: 4px solid #7D4F0D;
+}
+#sub-title{
+	color: #7D4F0D;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+#title{
+	font-size: 36px;
+	color: #452C07;
+}
+
+.services{
+	display: flex;
+	width: 60%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.service{
+	width: 40%;
+	padding: 30px;
+}
+
+
+.service ion-icon{
+	font-size: 4rem;
+	border-radius: 60px;
+	border: 1px solid #DA8916;
+	padding: 15px;
+	background-color: #FAEBD1;
+	color: #DA8916;
+	box-shadow: 2px 2px 10px 4px rgba(223,222,221,0.9);
+}
+
+.service h3{
+	padding-top: 15px;
+	color: #452C07;
+	font-weight: 600;
+	letter-spacing: 1px;
+
+}
+
+.service p{
+	font-size: 16px;
+	padding-top: 10px;
+
+}
+
+#woodworking-project{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 350px; 
+	width: 85%;
+	margin: 80px 0;
+}
+
+#woodworking-project::before{
+	content: "";
+	left: 0;
+	width: 70%;
+	z-index: -1;
+	position: absolute;
+	height: 380px;
+	background-color: #EBA138;
+	border-radius: 30px;
+	margin-left: -30px;
+}
+#woodworking-project iframe{
+	border-radius: 10px;
+}
+
+.products-title{
+	padding: 30px 50px;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+.product-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 20px 40px;
+	text-align: center;
+	line-height: 2rem;
+
+}
+.product{
+	width: 24%;
+	padding: 15px;
+	position: relative;
+}
+
+.product-detail{
+	position: absolute;
+	left: 25%;
+	top: 66%;
+	bottom: 0;
+	z-index: 1;
+	padding: 0px 26px;
+	height: 30px;
+	background: #EFB766;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #452C07;
+	border-radius: 30px;
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,15%);
+	text-decoration:none;
+}
+
+.product-detail:hover{
+	transform: scale(1.1);
+	background: #EBA138;
+}
+.product-img{
+	width: 100%;
+	height: 300px;
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,15%);
+
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	max-height: 100%
+	max-width:100%;
+	border-radius: 5px;
+}
+
+.product h3{
+	font-size: 22px;
+	color: #7D4F0D;
+	letter-spacing: 1.2px;
+	margin-top: 30px;
+}
+
+.product-price{
+	font-size: 16px;
+	color: rgba(69,44,7,90%);
+}
+
+.product-rating{
+	display:flex;
+	justify-content: space-around;
+	margin: 0 10px 0 30px;
+	align-items: center;
+	color: rgba(69,44,7,70%);
+}
+
+.product-rating ion-icon{
+	color: #EBA138;
+	font-size: 18px;
+}
+
+#gallery{
+	margin: 50px 0;
+	background: rgba(234, 161,56,50%);
+	padding: 40px 0px; 
+}
+
+.gallery-title{
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.gallery-title::after{
+	content: "";
+	display: block;
+	width: 5%;
+	margin: auto;
+	margin-top: 8px;
+	border-radius: 10px;
+	border-bottom: 4px solid #7D4F0D;
+}
+.gallery-nav{
+	text-align: center;
+	border-radius: 30px;
+	margin: 20px auto;
+	width: 60%;
+	background: #EBA138;
+	color: #452C07;
+
+}
+.gallery-nav li{
+	display: inline-block;
+	margin: 15px 30px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.gallery-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 12px;
+	margin: 40px;
+}
+
+.gallery-container > .gallery-img:nth-child(5n){
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+
+.gallery-img{
+	position: relative;
+	
+}
+
+.gallery-img figcaption{
+	position: absolute;
+	left: 0;
+	top: 0;
+	justify-content: center;
+	background: rgba(125,79,13,70%);
+	height: 100%;
+	width:100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #FEFBF6;
+	border-radius: 5px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	opacity: 0;
+}
+
+.gallery-img:hover > figcaption{
+	opacity: 1;
+	cursor: zoom-in;
+}
+
+#contactus{
+	display: flex;
+	width: 80%;
+	margin: 60px auto;
+	justify-content: space-between;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px 0px rgba(0,4,70,25%);
+}
+
+#form{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 40px 60px;
+}
+
+#form h1{
+	font-size: 34px;
+	font-weight: 200;
+	margin-bottom: 18px;
+}
+
+.form-control{
+	border-width: 0 0 2px 0 ;
+	padding: 20px 0;
+	background: inherit;
+	color: #452C07;
+	font-size: 14px;
+}
+
+.form-control:focus{
+	border-bottom: 2px solid #452C07;
+	outline: none;
+}
+
+#form textarea{
+	resize: vertical;
+	height: 150px;
+}
+.btn{
+	margin-top: 30px;
+	padding: 8px;
+	background:#AB6C11;
+	border: none; 
+	color: #FEFBF6;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	border-radius: 5px;
+	box-shadow: 0 6px 0px 4px rgba
+}
+
+.btn ion-icon{
+	font-size: 18px;
+}
+.information{
+	width: 40%;
+	background:#EFB766;
+	padding: 40px 30px;
+	color: #452C07;
+	border-radius: 5px;
+}
+
+.information h1{
+	font-size: 30px;
+	margin: 40px 0 60px 8px;
+	letter-spacing: 1.5px;
+}
+
+.information div{
+	margin: 45px 10px;
+	font-size: 20px;
+}
+
+.information ion-icon{
+	font-size: 26px;
+	margin-right: 5px;
+}
+footer{
+	background: #AB6C11;
+	margin-top: 50px;
+	padding: 30px;
+	
+}
+footer section{
+	display: flex;
+	justify-content: space-around;
+	align-self: center;
+	align-items: center;
+	margin-bottom: 40px;
+	
+}
+
+footer > section > a{
+	text-decoration: none;
+	color: #FEFBF6;
+	font-size: 18px;
+}
+
+.footer-logo{
+	width: 300px;
+	height: 50px;
+	padding-left: 70px;
+}
+
+footer > div{
+	text-align: center;
+	color: rgba(254, 251, 246, 70%);
+	font-size: 14px;
+}
+
+
+@media (max-width: 992px){
+
+	#header{
+		display: block;
+	}
+	.logo{
+		margin: 10px auto;
+		width: 40%;
+	}
+
+	#header ul{
+		width: 70%;
+		margin: auto;
+	}
+
+	#header li{
+		padding: 10px 5px;
+
+	}
+	.nav-link{
+		font-size: 14px;	
+	}
+	
+	.jumbotron-fluid{
+		height: 700px;
+	}
+
+	.jumbotron{
+		width: 85%;
+		top: 40%;
+		left: 10%;
+	}
+
+	.jumbotron h1{
+		font-size: 28px;
+	}
+
+	.jumbotron h3{
+		font-size: 24px;
+	}
+	.services-title{
+		width: 80%;
+		margin: 20px auto;
+		padding-top: 30px;
+	}
+
+	.services-title::after{
+		margin: 10px auto;
+		width: 50%;
+		border-width: 3px
+	}
+
+	#services{
+		margin-top: 30px;
+		display: block;
+		text-align: center;
+	}
+
+	.services{
+		width: 100%;
+	}
+
+	.service{
+		width: 80%;
+	}
+
+	#woodworking-project{
+		width: 95%;
+		padding-left: 30px;
+	}
+
+	.product{
+		width: 80%;
+		margin-bottom: 10px;	
+	}
+	.gallery-title::after{
+		width: 10%;
+	}
+
+	#contactus{
+		display: block;
+
+	}
+
+	#form{
+		width: 100%;
+	}
+
+	.information{
+		width: 100%;
+	}
+
+	.information div{
+		font-size: 16px;
+	}
+
+	footer > section > a{
+		font-size: 12px;
+	}
+
+	.footer-logo{
+		display: none;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+	.logo{
+		width: 20%;
+	}
+	#header ul{
+		width: 55%;
+	}
+	.nav-link{
+		font-size: 16px;	
+	}
+
+	#header li{
+		padding: 20px 15px;
+
+	}
+	.jumbotron{
+		width: 50%;
+	}
+	.product{
+		width: 50%;
+		margin-bottom: 10px;	
+	}
+
+	.footer-logo{
+		display: block;
+	}
+
+}
